@@ -46,6 +46,10 @@ main{
     padding: 10px;
     box-shadow: 5px 5px 15px 5px #00000025;
     margin-bottom: 20px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;  
+    border-radius: 5px;
 }
 
 .todo-item .remove-todo{
@@ -64,6 +68,10 @@ main{
 .todo-item .remove-todo:hover{
     color: gray;
     cursor: pointer;
+}
+
+.todo-description{
+    width: 100%;
 }
 
 @media only screen and (max-width: 500px) {

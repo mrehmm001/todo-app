@@ -38,6 +38,13 @@ function addTodo(todo, checked, id){
         <div class="todo-description">${todo}</div>
         <div class="remove-todo">✕</div>
     `
+    todoItem.querySelector(".todo-description").addEventListener("click",(e)=>{
+        const checkbox = todoItem.querySelector(".checkmark");
+        checkbox.checked = !checkbox.checked;
+        var event = new Event('click');
+        checkbox.dispatchEvent(event);
+    })
+    
     todoItem.querySelector(".checkmark").addEventListener("click",(e)=>{
         const checkedState = e.target.checked;
         savedTodos[id].checked = checkedState;
