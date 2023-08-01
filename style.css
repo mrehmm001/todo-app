@@ -78,4 +78,18 @@ main{
         width: 300px;
     }
     
-  }
+}
+
+@media only screen and (max-width: 300px) {
+    *{
+        font-size: small;
+    }
+    #add-todo-container input{
+        width: 200px
+    }
+    
+    .todo-item{
+        width: 200px;
+    }
+    
+}
