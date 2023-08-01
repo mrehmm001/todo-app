@@ -1,0 +1,67 @@
+*{
+    font-family: monospace;
+    font-size: large;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-todo-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+#add-todo-container input{
+    width: 500px;
+    padding:3px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#add-todo-container .add-todo-button{
+    margin-left: 5px;
+    background-color: rgb(154, 228, 160);
+    padding: 3px;
+    border-radius: 5px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;    
+}
+
+#add-todo-container .add-todo-button:hover{
+    background-color: rgb(217, 228, 154);
+    cursor: pointer;
+}
+
+.todo-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 600px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px 5px #00000025;
+    margin-bottom: 20px;
+}
+
+.todo-item .remove-todo{
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;   
+}
+
+.todo-item .checkmark{
+    margin-right: 5px;
+}
+
+.todo-item .remove-todo:hover{
+    color: gray;
+    cursor: pointer;
+}
